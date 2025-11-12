@@ -10,6 +10,7 @@ import { NATS_SERVICE, envs } from 'src/config';
         transport: Transport.NATS,
         options: {
           servers: envs.natsServers,
+          timeout: 10000, // 10 segundos para operaciones como bcrypt
         },
       },
     ]),
@@ -21,6 +22,7 @@ import { NATS_SERVICE, envs } from 'src/config';
         transport: Transport.NATS,
         options: {
           servers: envs.natsServers,
+          timeout: 10000, // 10 segundos para operaciones como bcrypt
         },
       },
     ]),
